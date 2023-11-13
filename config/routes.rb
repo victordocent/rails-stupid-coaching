@@ -9,4 +9,6 @@ Rails.application.routes.draw do
   # root "posts#index"
 
   get "ask" => "questions#ask"
+  get "answer" => "questions#answer"
+  post "answer" => "questions#answer"
 end
