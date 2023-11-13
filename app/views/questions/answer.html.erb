@@ -1,1 +1,19 @@
-<p><%= @answer %></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stupid Coach Answer</title>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+</head>
+<body>
+  <div class="container">
+    <h1>Stupid Coach Answer</h1>
+
+  <div class="callout">
+    <p class="italic question"><%= @question %></p>
+    <p class="answer"><%= @answer %></p>
+  </div>
+
+    <%= link_to "Ask another question", ask_path %>
+  </div>
+</body>
+</html>
